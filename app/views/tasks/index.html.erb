@@ -1,0 +1,11 @@
+<h1>Todo</h1>
+
+<table border=1 class="tasks">
+<tr><td>Task</td><td></td></tr>
+<% @tasks.each do |task| %>
+<tr class="task"><td><%= task.body %></td><td><a href="#" class="delete_button id_<%= task.id %>">Delete</a></td> </tr>
+<% end %>
+</table>
+
+<input method="text" id="text"/>
+<a href="#" class="add_button">Add</a>
