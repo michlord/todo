@@ -47,3 +47,7 @@ end
 group :production do
   gem 'shelly-dependencies'
 end
+
+gem 'thin'
+
+
